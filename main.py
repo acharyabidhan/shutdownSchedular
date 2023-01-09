@@ -12,7 +12,9 @@ root = Tk()
 root.resizable(0,0)
 window_width = 400
 window_height = 200
-root.iconbitmap("others\\icon.ico")
+try:
+    root.iconbitmap("others\\icon.ico")
+except: pass
 root.title("Routine Of Shutdown")
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
